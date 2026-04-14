@@ -14,21 +14,53 @@
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Shared header loader -->
-  <script type="module" src="script.js"></script>
 </head>
 
 <body>
   <main class="app-shell">
+    <header class="page-header">
+      <div class="page-header__inner">
+        <div class="page-header__content">
+          <p class="eyebrow">Civil Air Patrol Brand Tools</p>
+          <h1>Civil Air Patrol Brand Tools</h1>
+          <p class="lede">
+            Access official tools for generating compliant subordinate graphics, email signature blocks,
+            and emblems in accordance with Civil Air Patrol branding guidance.
+          </p>
+        </div>
 
-    <!-- 🔵 Shared Header (blue banner will render here) -->
-    <div id="shared-header"></div>
+        <nav class="tool-switcher" aria-label="Tool navigation">
+          <button type="button" class="active">
+            Brand Tools Home
+          </button>
+
+          <button
+            type="button"
+            onclick="window.location.href='https://cap-logo-generator.netlify.app/'"
+          >
+            Subordinate Entity Graphic Generator
+          </button>
+
+          <button
+            type="button"
+            onclick="window.location.href='https://cap-signature-generator.netlify.app/'"
+          >
+            Email Signature Block Generator
+          </button>
+
+          <button
+            type="button"
+            class="disabled"
+            disabled
+          >
+            Emblem Generator (Coming Soon)
+          </button>
+        </nav>
+      </div>
+    </header>
 
     <section class="layout landing-layout">
       <div class="controls-column">
-
-        <!-- GUIDANCE -->
         <section class="card guidance-card">
           <div class="section-heading">
             <h2>Welcome</h2>
@@ -49,7 +81,6 @@
           </div>
         </section>
 
-        <!-- TOOL CARDS -->
         <section class="card form-card">
           <section class="form-section">
             <div class="section-heading">
@@ -58,8 +89,6 @@
             </div>
 
             <div class="tool-grid">
-
-              <!-- LOGO GENERATOR -->
               <article class="tool-card">
                 <div class="tool-card__content">
                   <h3>Subordinate Entity Graphic Generator</h3>
@@ -78,7 +107,6 @@
                 </div>
               </article>
 
-              <!-- SIGNATURE GENERATOR -->
               <article class="tool-card">
                 <div class="tool-card__content">
                   <h3>Email Signature Block Generator</h3>
@@ -97,7 +125,6 @@
                 </div>
               </article>
 
-              <!-- EMBLEM GENERATOR (DISABLED) -->
               <article class="tool-card">
                 <div class="tool-card__content">
                   <h3>Emblem Generator</h3>
@@ -111,20 +138,16 @@
                   </span>
                 </div>
               </article>
-
             </div>
           </section>
         </section>
 
-        <!-- FOOTER -->
         <footer class="page-footer">
           Civil Air Patrol Brand Tools. Managed by
           <a href="mailto:brand@cap.gov">Maj. Roman Vitanza</a>.
         </footer>
-
       </div>
 
-      <!-- RIGHT PANEL -->
       <aside class="preview-column">
         <div class="preview-sticky">
           <section class="card preview-card">
@@ -137,7 +160,6 @@
 
             <div class="preview-surface">
               <div class="landing-info">
-
                 <section class="landing-info__section">
                   <h3>Subordinate Entity Graphics</h3>
                   <p>
@@ -159,13 +181,11 @@
                     Coming soon. This tool will support heraldic and emblematic graphic generation.
                   </p>
                 </section>
-
               </div>
             </div>
           </section>
         </div>
       </aside>
-
     </section>
   </main>
 </body>
