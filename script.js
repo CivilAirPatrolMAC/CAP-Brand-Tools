@@ -18,6 +18,22 @@ export async function loadSharedHeader(options = {}) {
       lede = ""
     } = options;
 
+    .header-graphic {
+        max-width: 420px;   /* adjust as needed */
+        width: 100%;
+        height: auto;
+    }
+    .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
     const titleEl = mount.querySelector("#site-title");
     const ledeEl = mount.querySelector("#site-lede");
 
@@ -47,3 +63,5 @@ document.addEventListener("DOMContentLoaded", () => {
     lede: "Access official tools for generating compliant subordinate graphics, email signatures, and emblems."
   });
 });
+
+
