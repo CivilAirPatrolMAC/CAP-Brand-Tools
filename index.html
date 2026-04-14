@@ -5,10 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Civil Air Patrol Brand Tools</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta
-    name="description"
-    content="Access Civil Air Patrol brand tools for subordinate graphics, email signatures, and emblem generation."
-  />
 
   <link rel="shortcut icon" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +15,7 @@
   >
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <main class="app-shell">
     <header class="page-header">
@@ -32,12 +29,9 @@
           </p>
         </div>
 
-        <nav class="tool-switcher" aria-label="Tool navigation">
-          <button
-            type="button"
-            class="active"
-            onclick="window.location.href='index.html'"
-          >
+        <!-- TOOL SWITCHER -->
+        <nav class="tool-switcher">
+          <button type="button" class="active">
             Brand Tools Home
           </button>
 
@@ -55,12 +49,9 @@
             Email Signature Block Generator
           </button>
 
-          <button
-            type="button"
-            class="disabled"
-            onclick="window.location.href='https://cap-emblem-generator.netlify.app/'"
-          >
-            Emblem Generator (Coming soon)
+          <!-- DISABLED -->
+          <button type="button" class="disabled" disabled>
+            Emblem Generator (Coming Soon)
           </button>
         </nav>
       </div>
@@ -68,6 +59,7 @@
 
     <section class="layout landing-layout">
       <div class="controls-column">
+        <!-- GUIDANCE -->
         <section class="card guidance-card">
           <div class="section-heading">
             <h2>Welcome</h2>
@@ -80,68 +72,77 @@
           <div class="callout callout--warning">
             <h3>Before using these tools</h3>
             <ul>
-              <li>Use official Civil Air Patrol names, titles, and organizational references.</li>
-              <li>Only use approved marks, emblems, and supporting graphics.</li>
-              <li>Review generated output for compliance before downloading or publishing.</li>
-              <li>When in doubt, contact the brand team for clarification.</li>
+              <li>Use official Civil Air Patrol names and conventions.</li>
+              <li>Only use approved emblems and graphics.</li>
+              <li>Review all generated output before publishing.</li>
+              <li>Contact the brand team if you are unsure.</li>
             </ul>
           </div>
         </section>
 
+        <!-- TOOL CARDS -->
         <section class="card form-card">
           <section class="form-section">
             <div class="section-heading">
               <h2>Available Tools</h2>
-              <p>
-                Select a tool below to begin creating branded materials.
-              </p>
+              <p>Select a tool below to begin.</p>
             </div>
 
             <div class="tool-grid">
+
+              <!-- LOGO GENERATOR -->
               <article class="tool-card">
                 <div class="tool-card__content">
                   <h3>Subordinate Entity Graphic Generator</h3>
                   <p>
-                    Create compliant subordinate entity graphics with approved CAP logo treatments,
-                    subordinate text, and optional secondary emblems.
+                    Create compliant subordinate graphics with CAP logo treatments and approved
+                    secondary emblems.
                   </p>
                 </div>
                 <div class="tool-card__actions">
-                  <a class="button button--primary" href="https://cap-logo-generator.netlify.app/">
+                  <a
+                    class="button button--primary"
+                    href="https://cap-logo-generator.netlify.app/"
+                  >
                     Open Tool
                   </a>
                 </div>
               </article>
 
+              <!-- SIGNATURE GENERATOR -->
               <article class="tool-card">
                 <div class="tool-card__content">
                   <h3>Email Signature Block Generator</h3>
                   <p>
-                    Build standardized Civil Air Patrol email signature blocks with live preview and
-                    formatting guidance.
+                    Build standardized Civil Air Patrol email signatures with live preview and
+                    formatting validation.
                   </p>
                 </div>
                 <div class="tool-card__actions">
-                  <a class="button button--primary" href="https://cap-signature-generator.netlify.app/">
+                  <a
+                    class="button button--primary"
+                    href="https://cap-signature-generator.netlify.app/"
+                  >
                     Open Tool
                   </a>
                 </div>
               </article>
 
+              <!-- EMBLEM GENERATOR (DISABLED) -->
               <article class="tool-card">
                 <div class="tool-card__content">
                   <h3>Emblem Generator</h3>
                   <p>
-                    Generate compliant CAP emblems using approved design, typography, and formatting
-                    conventions.
+                    Generate compliant CAP emblems using approved formatting and design standards.
                   </p>
                 </div>
                 <div class="tool-card__actions">
-                  <a class="button button--primary" href="https://cap-emblem-generator.netlify.app/">
-                    Open Tool
-                  </a>
+                  <span class="button button--primary disabled">
+                    Coming Soon
+                  </span>
                 </div>
               </article>
+
             </div>
           </section>
         </section>
@@ -152,42 +153,42 @@
         </footer>
       </div>
 
+      <!-- RIGHT PANEL -->
       <aside class="preview-column">
         <div class="preview-sticky">
           <section class="card preview-card">
             <div class="preview-card__header">
               <div class="preview-card__title">
-                <h2>Brand Tool Guidance</h2>
-                <p>
-                  Use the appropriate tool for the type of branded asset you need to create.
-                </p>
+                <h2>Tool Guidance</h2>
+                <p>Use the appropriate tool for your needs.</p>
               </div>
             </div>
 
             <div class="preview-surface">
               <div class="landing-info">
+
                 <section class="landing-info__section">
-                  <h3>Use the Subordinate Entity Graphic Generator for:</h3>
+                  <h3>Subordinate Entity Graphics</h3>
                   <p>
-                    Directorates, programs, campaigns, and subordinate entity graphics that use the CAP wordmark
-                    with supporting subordinate text and optional approved secondary graphics.
+                    Use for directorates, programs, and subordinate entities using the CAP wordmark
+                    with supporting text and emblems.
                   </p>
                 </section>
 
                 <section class="landing-info__section">
-                  <h3>Use the Email Signature Block Generator for:</h3>
+                  <h3>Email Signatures</h3>
                   <p>
-                    Standardized email signatures for adult members, cadets, and NHQ staff using approved
-                    formatting and live preview.
+                    Use for standardized Civil Air Patrol email signatures for members and staff.
                   </p>
                 </section>
 
                 <section class="landing-info__section">
-                  <h3>Use the Emblem Generator for:</h3>
+                  <h3>Emblems</h3>
                   <p>
-                    Heraldic and emblematic graphics that require approved CAP emblem formatting and presentation.
+                    Coming soon. This tool will support heraldic and emblematic graphic generation.
                   </p>
                 </section>
+
               </div>
             </div>
           </section>
